@@ -44,6 +44,14 @@
   a.btn.main{background:linear-gradient(135deg,#fff 0%,#FFF8EC 100%);border:1.5px solid rgba(158,126,64,.35)}
   a.btn.soon{opacity:.55;pointer-events:none}
   .badge{font-family:'Fredoka';font-size:11px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:20px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+  .prod{display:flex;align-items:flex-start;gap:14px;background:#fff;border-radius:18px;padding:14px 16px;
+        box-shadow:0 1px 0 rgba(0,0,0,.04),0 6px 18px rgba(120,95,40,.08);border:1px solid rgba(158,126,64,.12)}
+  .prod.main{background:linear-gradient(135deg,#fff 0%,#FFF8EC 100%);border:1.5px solid rgba(158,126,64,.35)}
+  .shops{display:flex;gap:8px;margin-top:10px}
+  a.shop{flex:1;text-align:center;text-decoration:none;font-size:14px;font-weight:600;padding:9px 0;border-radius:12px;transition:transform .15s}
+  a.shop:active{transform:scale(.97)}
+  a.shop.nv{background:#E8F8EE;color:#0F8A3C}
+  a.shop.cp{background:#FFF0E8;color:#C2410C}
   footer{text-align:center;margin-top:30px;font-size:12px;color:var(--sub);line-height:1.7}
   footer .en2{font-family:'Fredoka';letter-spacing:.08em;color:var(--gold);font-size:12px}
 </style>
@@ -58,21 +66,16 @@
   </header>
 
   <nav class="links">
-    <a class="btn main" href="https://smartstore.naver.com/omgstore">
+    <div class="prod main">
       <span class="ic" style="background:var(--coral)"><svg viewBox="0 0 24 24"><path d="M4 20l3-1 11-11-2-2L5 17z"/><path d="M14 6l2 2"/></svg></span>
-      <span class="tx"><div class="en">3D Pen P67 Set</div><div class="ko">3D펜 세트 · 네이버 스마트스토어</div></span>
-      <span class="arr">›</span>
-    </a>
-    <a class="btn" href="#coupang" data-todo="쿠팡 P67 상품 주소">
-      <span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24"><path d="M3 7h13v9H3z"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span>
-      <span class="tx"><div class="en">Shop on Coupang</div><div class="ko">쿠팡에서 빠르게 받기</div></span>
-      <span class="arr">›</span>
-    </a>
-    <a class="btn" href="https://smartstore.naver.com/omgstore" data-todo="PLA 24색 상품 주소">
+      <span class="tx"><div class="en">3D Pen P67 Set</div><div class="ko">오마주 3D펜 세트</div>
+        <div class="shops"><a class="shop nv" href="https://naver.me/x22UcmRs">네이버</a><a class="shop cp" href="https://link.coupang.com/a/iulPAxEdmm">쿠팡</a></div></span>
+    </div>
+    <div class="prod">
       <span class="ic" style="background:var(--mint)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
-      <span class="tx"><div class="en">PLA Filament 24 Colors</div><div class="ko">PLA 필라멘트 24색 리필</div></span>
-      <span class="arr">›</span>
-    </a>
+      <span class="tx"><div class="en">PLA Filament 24 Colors</div><div class="ko">PLA 필라멘트 24색 리필</div>
+        <div class="shops"><a class="shop nv" href="https://naver.me/F4WKdQ9p">네이버</a><a class="shop cp" href="https://link.coupang.com/a/iulWCCUnVA">쿠팡</a></div></span>
+    </div>
     <a class="btn" href="https://pf.kakao.com/_fWvhs/chat">
       <span class="ic" style="background:var(--sky)"><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></span>
       <span class="tx"><div class="en">For Schools &amp; Classes</div><div class="ko">학교·방과후 단체 구매 할인 문의</div></span>
