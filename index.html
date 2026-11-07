@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>homage · 오마주 링크</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF5E7; --ink:#1E1B16; --sub:#7A705F; --gold:#9E7E40;
+    --coral:#FF8A7A; --sun:#FFC95C; --mint:#6FD6A0; --sky:#6CC3F5; --lav:#B49CF7; --pink:#F79AD0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{font-family:'Gowun Dodum',sans-serif;color:var(--ink);min-height:100vh;
+       display:flex;justify-content:center;padding:40px 18px 48px;
+       background:
+         radial-gradient(600px 300px at 10% -5%, #FFE3DD 0%, transparent 60%),
+         radial-gradient(500px 280px at 105% 10%, #DDF3FF 0%, transparent 60%),
+         radial-gradient(520px 300px at 50% 110%, #EFE6FF 0%, transparent 60%),
+         var(--bg);}
+  .wrap{width:100%;max-width:440px}
+  header{text-align:center}
+  .logo{width:78%;max-width:320px;display:block;margin:0 auto}
+  .tag{font-family:'Fredoka',sans-serif;font-weight:500;font-size:15px;letter-spacing:.06em;color:var(--ink);margin-top:4px}
+  .tag-ko{font-size:13px;color:var(--sub);margin-top:6px}
+  .rainbow{height:4px;width:64px;margin:18px auto 26px;border-radius:4px;
+           background:linear-gradient(90deg,var(--coral),var(--sun),var(--mint),var(--sky),var(--lav),var(--pink))}
+  .links{display:flex;flex-direction:column;gap:12px}
+  a.btn{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);
+        background:#fff;border-radius:18px;padding:14px 16px;
+        box-shadow:0 1px 0 rgba(0,0,0,.04),0 6px 18px rgba(120,95,40,.08);
+        border:1px solid rgba(158,126,64,.12);transition:transform .15s,box-shadow .15s}
+  a.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(120,95,40,.14)}
+  a.btn:active{transform:scale(.98)}
+  .ic{flex:0 0 44px;height:44px;border-radius:14px;display:grid;place-items:center}
+  .ic svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .tx{flex:1;min-width:0}
+  .en{font-family:'Fredoka',sans-serif;font-weight:600;font-size:16px;letter-spacing:.01em}
+  .ko{font-size:12.5px;color:var(--sub);margin-top:2px}
+  .arr{color:#C9BBA0;font-family:'Fredoka';font-size:20px}
+  a.btn.main{background:linear-gradient(135deg,#fff 0%,#FFF8EC 100%);border:1.5px solid rgba(158,126,64,.35)}
+  a.btn.soon{opacity:.55;pointer-events:none}
+  .badge{font-family:'Fredoka';font-size:11px;font-weight:600;color:var(--gold);border:1px solid var(--gold);border-radius:20px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+  footer{text-align:center;margin-top:30px;font-size:12px;color:var(--sub);line-height:1.7}
+  footer .en2{font-family:'Fredoka';letter-spacing:.08em;color:var(--gold);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="img/wordmark.png" alt="homage 오마주">
+    <p class="tag">Draw your imagination in 3D</p>
+    <p class="tag-ko">3D펜 만들기 · 체험 · 수업</p>
+    <div class="rainbow"></div>
+  </header>
+
+  <nav class="links">
+    <a class="btn main" href="https://smartstore.naver.com/omgstore">
+      <span class="ic" style="background:var(--coral)"><svg viewBox="0 0 24 24"><path d="M4 20l3-1 11-11-2-2L5 17z"/><path d="M14 6l2 2"/></svg></span>
+      <span class="tx"><div class="en">3D Pen P67 Set</div><div class="ko">3D펜 세트 · 네이버 스마트스토어</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn" href="#coupang" data-todo="쿠팡 P67 상품 주소">
+      <span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24"><path d="M3 7h13v9H3z"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span>
+      <span class="tx"><div class="en">Shop on Coupang</div><div class="ko">쿠팡에서 빠르게 받기</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn" href="https://smartstore.naver.com/omgstore" data-todo="PLA 24색 상품 주소">
+      <span class="ic" style="background:var(--mint)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span class="tx"><div class="en">PLA Filament 24 Colors</div><div class="ko">PLA 필라멘트 24색 리필</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn" href="https://pf.kakao.com/_fWvhs/chat">
+      <span class="ic" style="background:var(--sky)"><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></span>
+      <span class="tx"><div class="en">For Schools &amp; Classes</div><div class="ko">학교·방과후 단체 구매 할인 문의</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn" href="https://pf.kakao.com/_fWvhs/chat">
+      <span class="ic" style="background:var(--lav)"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+      <span class="tx"><div class="en">Talk to Us</div><div class="ko">카카오톡 문의 · 사용법 · A/S</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn" href="https://blog.naver.com/hlabkor">
+      <span class="ic" style="background:var(--pink)"><svg viewBox="0 0 24 24"><path d="M5 4h10l4 4v12H5z"/><path d="M9 12h6M9 16h4"/></svg></span>
+      <span class="tx"><div class="en">How-to &amp; Tips</div><div class="ko">사용법·작품 아이디어 블로그</div></span>
+      <span class="arr">›</span>
+    </a>
+    <a class="btn soon" href="#">
+      <span class="ic" style="background:linear-gradient(135deg,var(--coral),var(--sun),var(--mint),var(--sky),var(--lav))"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span>
+      <span class="tx"><div class="en">Season Templates <span class="badge">SOON</span></div><div class="ko">시즌 도안 무료 공유 · 곧 공개</div></span>
+      <span class="arr">›</span>
+    </a>
+  </nav>
+
+  <footer>
+    <div class="en2">HOMAGE · KOREA</div>
+    오마주 고객지원 070-7882-9000
+  </footer>
+</div>
+</body>
+</html>
